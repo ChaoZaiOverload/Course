@@ -7,25 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		543023291DB2AC14005BB70B /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543023281DB2AC14005BB70B /* TableViewDataSource.swift */; };
 		5430232B1DB2AF0B005BB70B /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5430232A1DB2AF0B005BB70B /* Course.swift */; };
-		5430232D1DB2CC7F005BB70B /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5430232C1DB2CC7F005BB70B /* CourseTableViewCell.swift */; };
 		5430232F1DB2D3F4005BB70B /* Specialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5430232E1DB2D3F4005BB70B /* Specialization.swift */; };
 		543023311DB2D57B005BB70B /* ResultBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543023301DB2D57B005BB70B /* ResultBase.swift */; };
-		543023331DB2D669005BB70B /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543023321DB2D669005BB70B /* LoadingCell.swift */; };
-		543023371DB338FB005BB70B /* SpecializationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543023361DB338FB005BB70B /* SpecializationTableViewCell.swift */; };
-		543023391DB3DC29005BB70B /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543023381DB3DC29005BB70B /* ResultTableViewCell.swift */; };
 		54A699E51DB29D20007D9ECF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A699E41DB29D20007D9ECF /* AppDelegate.swift */; };
 		54A699E71DB29D20007D9ECF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A699E61DB29D20007D9ECF /* ViewController.swift */; };
 		54A699EA1DB29D20007D9ECF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54A699E81DB29D20007D9ECF /* Main.storyboard */; };
 		54A699EF1DB29D20007D9ECF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54A699ED1DB29D20007D9ECF /* LaunchScreen.storyboard */; };
-		54A8D5C21DB48DCF00D8BAC8 /* UIImageView+LoadFromUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A8D5C11DB48DCF00D8BAC8 /* UIImageView+LoadFromUrl.swift */; };
 		54A8D5C91DB49A0A00D8BAC8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54A8D5C81DB49A0A00D8BAC8 /* Images.xcassets */; };
 		54A8D5CE1DB49ABB00D8BAC8 /* result_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 54A8D5CD1DB49ABB00D8BAC8 /* result_placeholder.png */; };
-		54A8D5D11DB49F0100D8BAC8 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A8D5D01DB49F0100D8BAC8 /* DetailsViewController.swift */; };
-		54A8D5D71DB5E64900D8BAC8 /* CourseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A8D5D61DB5E64900D8BAC8 /* CourseDetailsViewController.swift */; };
-		54A8D5D91DB5E80B00D8BAC8 /* SpecDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A8D5D81DB5E80B00D8BAC8 /* SpecDetailsViewController.swift */; };
 		77383580E4E4118EB2BA1673 /* Pods_Learn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED360FEBE4B842949834388 /* Pods_Learn.framework */; };
+		EFA76A252059CC0E004452E1 /* ResultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA76A242059CC0E004452E1 /* ResultCollectionViewCell.swift */; };
+		EFA76A272059CF82004452E1 /* ViewControllerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA76A262059CF82004452E1 /* ViewControllerInteractor.swift */; };
+		EFA76A282059D7FA004452E1 /* ViewControllerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA76A262059CF82004452E1 /* ViewControllerInteractor.swift */; };
+		EFA76A292059D7FB004452E1 /* ViewControllerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA76A262059CF82004452E1 /* ViewControllerInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,14 +42,9 @@
 
 /* Begin PBXFileReference section */
 		03CDF01529031F407E47F007 /* Pods-Learn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Learn/Pods-Learn.debug.xcconfig"; sourceTree = "<group>"; };
-		543023281DB2AC14005BB70B /* TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		5430232A1DB2AF0B005BB70B /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
-		5430232C1DB2CC7F005BB70B /* CourseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseTableViewCell.swift; sourceTree = "<group>"; };
 		5430232E1DB2D3F4005BB70B /* Specialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Specialization.swift; sourceTree = "<group>"; };
 		543023301DB2D57B005BB70B /* ResultBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultBase.swift; path = ../ResultBase.swift; sourceTree = "<group>"; };
-		543023321DB2D669005BB70B /* LoadingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
-		543023361DB338FB005BB70B /* SpecializationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecializationTableViewCell.swift; sourceTree = "<group>"; };
-		543023381DB3DC29005BB70B /* ResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
 		54A699E11DB29D20007D9ECF /* Learn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Learn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A699E41DB29D20007D9ECF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54A699E61DB29D20007D9ECF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,14 +53,12 @@
 		54A699F01DB29D20007D9ECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54A699F51DB29D20007D9ECF /* LearnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A69A001DB29D21007D9ECF /* LearnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		54A8D5C11DB48DCF00D8BAC8 /* UIImageView+LoadFromUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+LoadFromUrl.swift"; sourceTree = "<group>"; };
 		54A8D5C81DB49A0A00D8BAC8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		54A8D5CD1DB49ABB00D8BAC8 /* result_placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = result_placeholder.png; sourceTree = "<group>"; };
-		54A8D5D01DB49F0100D8BAC8 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
-		54A8D5D61DB5E64900D8BAC8 /* CourseDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseDetailsViewController.swift; sourceTree = "<group>"; };
-		54A8D5D81DB5E80B00D8BAC8 /* SpecDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecDetailsViewController.swift; sourceTree = "<group>"; };
 		CED360FEBE4B842949834388 /* Pods_Learn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Learn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E91B1673710F60C44F74831C /* Pods_LearnTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearnTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFA76A242059CC0E004452E1 /* ResultCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCollectionViewCell.swift; sourceTree = "<group>"; };
+		EFA76A262059CF82004452E1 /* ViewControllerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInteractor.swift; sourceTree = "<group>"; };
 		EFE1BDFAF38ADCC4133EB945 /* Pods_LearnUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearnUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFED8D800B85C2D380F7E781 /* Pods-Learn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learn.release.xcconfig"; path = "Pods/Target Support Files/Pods-Learn/Pods-Learn.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,17 +89,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5430233A1DB3E233005BB70B /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				543023321DB2D669005BB70B /* LoadingCell.swift */,
-				5430232C1DB2CC7F005BB70B /* CourseTableViewCell.swift */,
-				543023361DB338FB005BB70B /* SpecializationTableViewCell.swift */,
-				543023381DB3DC29005BB70B /* ResultTableViewCell.swift */,
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
 		5430233B1DB3E244005BB70B /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,26 +123,17 @@
 		54A699E31DB29D20007D9ECF /* Learn */ = {
 			isa = PBXGroup;
 			children = (
-				54A8D5D51DB5D36D00D8BAC8 /* View Controllers */,
-				54A8D5C01DB48DB300D8BAC8 /* Extensions */,
+				EFA76A262059CF82004452E1 /* ViewControllerInteractor.swift */,
+				EFA76A242059CC0E004452E1 /* ResultCollectionViewCell.swift */,
+				54A699E61DB29D20007D9ECF /* ViewController.swift */,
 				5430233B1DB3E244005BB70B /* Models */,
 				54A699E41DB29D20007D9ECF /* AppDelegate.swift */,
 				54A699E81DB29D20007D9ECF /* Main.storyboard */,
 				54A8D5C81DB49A0A00D8BAC8 /* Images.xcassets */,
 				54A699ED1DB29D20007D9ECF /* LaunchScreen.storyboard */,
-				543023281DB2AC14005BB70B /* TableViewDataSource.swift */,
 				54A699F01DB29D20007D9ECF /* Info.plist */,
-				5430233A1DB3E233005BB70B /* Views */,
 			);
 			path = Learn;
-			sourceTree = "<group>";
-		};
-		54A8D5C01DB48DB300D8BAC8 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				54A8D5C11DB48DCF00D8BAC8 /* UIImageView+LoadFromUrl.swift */,
-			);
-			name = Extensions;
 			sourceTree = "<group>";
 		};
 		54A8D5CF1DB49AC500D8BAC8 /* Assets */ = {
@@ -174,17 +142,6 @@
 				54A8D5CD1DB49ABB00D8BAC8 /* result_placeholder.png */,
 			);
 			name = Assets;
-			sourceTree = "<group>";
-		};
-		54A8D5D51DB5D36D00D8BAC8 /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				54A8D5D01DB49F0100D8BAC8 /* DetailsViewController.swift */,
-				54A699E61DB29D20007D9ECF /* ViewController.swift */,
-				54A8D5D61DB5E64900D8BAC8 /* CourseDetailsViewController.swift */,
-				54A8D5D81DB5E80B00D8BAC8 /* SpecDetailsViewController.swift */,
-			);
-			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 		7159B30A593CFB3B8B304D85 /* Pods */ = {
@@ -408,19 +365,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5430232B1DB2AF0B005BB70B /* Course.swift in Sources */,
-				543023291DB2AC14005BB70B /* TableViewDataSource.swift in Sources */,
-				54A8D5D71DB5E64900D8BAC8 /* CourseDetailsViewController.swift in Sources */,
-				543023371DB338FB005BB70B /* SpecializationTableViewCell.swift in Sources */,
-				543023331DB2D669005BB70B /* LoadingCell.swift in Sources */,
+				EFA76A272059CF82004452E1 /* ViewControllerInteractor.swift in Sources */,
+				EFA76A252059CC0E004452E1 /* ResultCollectionViewCell.swift in Sources */,
 				5430232F1DB2D3F4005BB70B /* Specialization.swift in Sources */,
 				543023311DB2D57B005BB70B /* ResultBase.swift in Sources */,
 				54A699E71DB29D20007D9ECF /* ViewController.swift in Sources */,
-				54A8D5D91DB5E80B00D8BAC8 /* SpecDetailsViewController.swift in Sources */,
 				54A699E51DB29D20007D9ECF /* AppDelegate.swift in Sources */,
-				54A8D5C21DB48DCF00D8BAC8 /* UIImageView+LoadFromUrl.swift in Sources */,
-				543023391DB3DC29005BB70B /* ResultTableViewCell.swift in Sources */,
-				5430232D1DB2CC7F005BB70B /* CourseTableViewCell.swift in Sources */,
-				54A8D5D11DB49F0100D8BAC8 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFA76A282059D7FA004452E1 /* ViewControllerInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +386,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFA76A292059D7FB004452E1 /* ViewControllerInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,7 +523,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G9L824E33E;
 				INFOPLIST_FILE = Learn/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cs.Learn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -586,7 +538,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G9L824E33E;
 				INFOPLIST_FILE = Learn/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cs.Learn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
