@@ -1,0 +1,23 @@
+PODS:
+  - Alamofire (4.7.0)
+  - FLEX (2.4.0)
+  - SDWebImage (4.3.2):
+    - SDWebImage/Core (= 4.3.2)
+  - SDWebImage/Core (4.3.2)
+  - SwiftyJSON (4.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7.0)
+  - FLEX (~> 2.0)
+  - SDWebImage
+  - SwiftyJSON (= 4.0.0)
+
+SPEC CHECKSUMS:
+  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
+  SDWebImage: 29bd3c0bc1f01e5eb59720847c64ad4c4ca1af5d
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+
+PODFILE CHECKSUM: 68a0464ffe38774683633b66067acc1797a1ac7b
+
+COCOAPODS: 1.4.0
