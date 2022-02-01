@@ -6,9 +6,9 @@ target 'Learn' do
   use_frameworks!
 
   # Pods for Learn
-  pod 'Alamofire', '~> 4.7.0'
-  pod 'SwiftyJSON', '4.0.0'
-  pod 'FLEX', '~> 2.0', :configurations => ['Debug'] 
-  pod 'SDWebImage'
+  pod 'Alamofire', '~> 5.5'
+  pod 'SwiftyJSON'
+  pod 'FLEX', :configurations => ['Debug']
+  pod 'SDWebImage', '~> 5.0'
 
 end

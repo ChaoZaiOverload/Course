@@ -33,10 +33,9 @@ class ViewControllerInteractor: NSObject {
         var params = default_params
         params.updateValue(query, forKey: "query")
         params.updateValue(String(self.start), forKey: "start")
-        Alamofire.request(baseUrl, method: .get, parameters: params).validate().responseJSON { response in
-            self.parseReponse(response: response)
-            
-        }
+        AF.request(baseUrl, method: HTTPMethod.get, parameters: params).validate().responseJSON { (response) in
+        self.parseReponse(response: response)
+      }
     }
     
     fileprivate func newQuery(query: String?) {
@@ -51,8 +50,8 @@ class ViewControllerInteractor: NSObject {
         }
     }
     
-    private func parseReponse(response: DataResponse<Any>) {
-        print("request url: \(response.request)")
+    private func parseReponse(response: AFDataResponse<Any>) {
+      print("request url: \(String(describing: response.request))")
         
         
         switch(response.result) {
