@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1877C68527F0D34D0054C3EA /* CourseNetworkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877C68427F0D34D0054C3EA /* CourseNetworkable.swift */; };
+		1877C68A27F0DFB70054C3EA /* CourseNetworkerAF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877C68927F0DFB70054C3EA /* CourseNetworkerAF.swift */; };
+		1877C68F27F0DFE80054C3EA /* CourseNetworkerNative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877C68E27F0DFE80054C3EA /* CourseNetworkerNative.swift */; };
+		1877C69727F0F7CE0054C3EA /* CourseNetworkerJsonConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877C69627F0F7CE0054C3EA /* CourseNetworkerJsonConvertible.swift */; };
+		1877C69C27F1DE7B0054C3EA /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877C69B27F1DE7B0054C3EA /* ImageLoader.swift */; };
 		5430232B1DB2AF0B005BB70B /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5430232A1DB2AF0B005BB70B /* Course.swift */; };
 		5430232F1DB2D3F4005BB70B /* Specialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5430232E1DB2D3F4005BB70B /* Specialization.swift */; };
 		543023311DB2D57B005BB70B /* ResultBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543023301DB2D57B005BB70B /* ResultBase.swift */; };
@@ -42,6 +47,11 @@
 
 /* Begin PBXFileReference section */
 		03CDF01529031F407E47F007 /* Pods-Learn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Learn/Pods-Learn.debug.xcconfig"; sourceTree = "<group>"; };
+		1877C68427F0D34D0054C3EA /* CourseNetworkable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseNetworkable.swift; sourceTree = "<group>"; };
+		1877C68927F0DFB70054C3EA /* CourseNetworkerAF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseNetworkerAF.swift; sourceTree = "<group>"; };
+		1877C68E27F0DFE80054C3EA /* CourseNetworkerNative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseNetworkerNative.swift; sourceTree = "<group>"; };
+		1877C69627F0F7CE0054C3EA /* CourseNetworkerJsonConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseNetworkerJsonConvertible.swift; sourceTree = "<group>"; };
+		1877C69B27F1DE7B0054C3EA /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		5430232A1DB2AF0B005BB70B /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		5430232E1DB2D3F4005BB70B /* Specialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Specialization.swift; sourceTree = "<group>"; };
 		543023301DB2D57B005BB70B /* ResultBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultBase.swift; path = ../ResultBase.swift; sourceTree = "<group>"; };
@@ -132,6 +142,11 @@
 				54A8D5C81DB49A0A00D8BAC8 /* Images.xcassets */,
 				54A699ED1DB29D20007D9ECF /* LaunchScreen.storyboard */,
 				54A699F01DB29D20007D9ECF /* Info.plist */,
+				1877C68427F0D34D0054C3EA /* CourseNetworkable.swift */,
+				1877C68927F0DFB70054C3EA /* CourseNetworkerAF.swift */,
+				1877C68E27F0DFE80054C3EA /* CourseNetworkerNative.swift */,
+				1877C69627F0F7CE0054C3EA /* CourseNetworkerJsonConvertible.swift */,
+				1877C69B27F1DE7B0054C3EA /* ImageLoader.swift */,
 			);
 			path = Learn;
 			sourceTree = "<group>";
@@ -309,6 +324,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/FLEX/FLEX.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -316,6 +332,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLEX.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,10 +366,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5430232B1DB2AF0B005BB70B /* Course.swift in Sources */,
+				1877C68527F0D34D0054C3EA /* CourseNetworkable.swift in Sources */,
+				1877C69C27F1DE7B0054C3EA /* ImageLoader.swift in Sources */,
 				EFA76A272059CF82004452E1 /* ViewControllerInteractor.swift in Sources */,
 				EFA76A252059CC0E004452E1 /* ResultCollectionViewCell.swift in Sources */,
 				5430232F1DB2D3F4005BB70B /* Specialization.swift in Sources */,
+				1877C69727F0F7CE0054C3EA /* CourseNetworkerJsonConvertible.swift in Sources */,
 				543023311DB2D57B005BB70B /* ResultBase.swift in Sources */,
+				1877C68A27F0DFB70054C3EA /* CourseNetworkerAF.swift in Sources */,
+				1877C68F27F0DFE80054C3EA /* CourseNetworkerNative.swift in Sources */,
 				54A699E71DB29D20007D9ECF /* ViewController.swift in Sources */,
 				54A699E51DB29D20007D9ECF /* AppDelegate.swift in Sources */,
 			);

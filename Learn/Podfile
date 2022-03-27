@@ -6,6 +6,7 @@ target 'Learn' do
   use_frameworks!
 
   # Pods for Learn
+  pod 'SnapKit', '~> 5.0.0'
   pod 'Alamofire', '~> 5.5'
   pod 'SwiftyJSON'
   pod 'FLEX', :configurations => ['Debug']
