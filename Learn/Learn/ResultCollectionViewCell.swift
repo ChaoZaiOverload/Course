@@ -12,15 +12,36 @@ import SnapKit
 
 class ResultCollectionViewCell: UICollectionViewCell {
   private var imageManager = NativeImageWorker()
-  
+  let imageViewWidth: CGFloat = 40
+  let imageViewTrailingPadding: CGFloat = 5
+  var labelMaxLayoutWidth: CGFloat {
+    return UIScreen.main.bounds.width - imageViewWidth - imageViewTrailingPadding * 2
+  }
+
   private lazy var imageView = UIImageView()
-  private lazy var titleLabel = UILabel()
-  private lazy var detailLabel = UILabel()
+  private lazy var titleLabel: UILabel = {
+    let l = UILabel()
+    l.numberOfLines = 0
+    l.lineBreakMode = .byWordWrapping
+    l.preferredMaxLayoutWidth = labelMaxLayoutWidth // for the correct computation of intrinsicContentSize while label is multi line
+    return l
+  }()
+  private lazy var detailLabel: UILabel = {
+    let l = UILabel()
+    l.numberOfLines = 0
+    l.lineBreakMode = .byWordWrapping
+    l.preferredMaxLayoutWidth = labelMaxLayoutWidth
+    return l
+  }()
+
+
   private lazy var stackView: UIStackView = {
     let v = UIStackView(arrangedSubviews: [titleLabel, detailLabel])
     v.alignment = .leading
+    v.distribution = .fill
     v.axis = .vertical
     v.spacing = 2
+    v.translatesAutoresizingMaskIntoConstraints = false
     return v
   }()
   
@@ -32,12 +53,12 @@ class ResultCollectionViewCell: UICollectionViewCell {
     contentView.addSubview(stackView)
     
     imageView.snp.makeConstraints { (make) in
-      make.left.equalToSuperview().offset(5)
-      make.height.width.equalTo(40)
+      make.leading.equalToSuperview().offset(imageViewTrailingPadding)
+      make.height.width.equalTo(imageViewWidth)
       make.centerY.equalToSuperview()
     }
     stackView.snp.makeConstraints { (make) in
-      make.left.equalTo(imageView.snp.right).offset(8)
+      make.left.equalTo(imageView.snp.right).offset(imageViewTrailingPadding)
       make.right.lessThanOrEqualToSuperview()
       make.top.bottom.equalToSuperview().inset(5)
     }
@@ -60,7 +81,7 @@ class ResultCollectionViewCell: UICollectionViewCell {
         if let img = img, url.absoluteString == self.result?.imageUrl {
           self.imageView.image = img
         } else if img != nil, url.absoluteString != self.result?.imageUrl {
-          print("previous url:\(url.absoluteString), current:\(self.result?.imageUrl)")
+          print("previous url:\(url.absoluteString), current:\(String(describing: self.result?.imageUrl))")
         }
       }
     }
@@ -80,4 +101,13 @@ class ResultCollectionViewCell: UICollectionViewCell {
     self.titleLabel.text = nil
     self.detailLabel.text = nil
   }
+
+// not doing anything , not changing the width
+//  override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
+//    let attr = super.preferredLayoutAttributesFitting(layoutAttributes)
+//    let width = UIScreen.main.bounds.width
+//    let fittedSize = systemLayoutSizeFitting(CGSize(width: width, height: UIView.layoutFittingCompressedSize.height), withHorizontalFittingPriority: UILayoutPriority.required, verticalFittingPriority: .fittingSizeLevel)
+//    attr.size.height = fittedSize.height
+//    return attr
+//  }
 }

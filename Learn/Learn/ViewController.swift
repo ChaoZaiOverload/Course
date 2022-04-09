@@ -17,7 +17,8 @@ final class ViewController: UIViewController {
 //    let spacing: CGFloat = 8
 //    let width = (UIScreen.main.bounds.size.width - spacing) / 2
 //    f.itemSize = CGSize(width: width, height: width)
-    f.itemSize = CGSize(width: UIScreen.main.bounds.size.width, height: 50)
+//    f.itemSize = CGSize(width: UIScreen.main.bounds.size.width, height: 80)
+    f.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
     return f
   }()
   
